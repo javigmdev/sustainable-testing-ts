@@ -1,10 +1,3 @@
-/*
-  null ⇒ 0, "" ⇒ 0
-  "1" ⇒ 1
-  "1,2" ⇒ 3, "1,2,3" ⇒ 6
-  "a" ⇒ 0, "1,a" ⇒ 1, "1,a,2" ⇒ 3, "1a, 2" ⇒ 2
-  "//#/3#2" ⇒ 5, "//#/3,2" ⇒ 0, "//%/1%2%3" ⇒ 6
-*/
 import { sumNumbers } from '../../core/09-kata-string-calculator/stringCalculator';
 
 describe('The string calculator', () => {
