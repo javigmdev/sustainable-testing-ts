@@ -1,5 +1,5 @@
 {
-  "name": "only-typescript",
+  "name": "testing-sostenible-ts",
   "version": "1.0.0",
   "description": "",
   "main": "lib/app.js",
@@ -12,17 +12,31 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "check-updates": "ncu -u"
+    "check-updates": "ncu -u",
+    "start-practice-17": "ts-node src/core/17-backend-testing/main.ts",
+    "test:unit-practice-17": "jest --testMatch='**/src/tests/17-backend-testing/unit/**/*.test.*'",
+    "test:integration-practice-17": "jest --testMatch='**/src/tests/17-backend-testing/integration/**/*.test.*'",
+    "test-practice-17": "npm run test:integration-practice-17 && npm run test:unit-practice-17"
   },
   "devDependencies": {
     "@types/jest": "^29.5.11",
     "fast-check": "^3.19.0",
     "jest": "^29.7.0",
     "npm-check-updates": "^10.0.0",
+    "supertest": "^6.3.3",
     "ts-jest": "^29.1.2",
     "typescript": "^4.0.5"
   },
   "dependencies": {
-    "jsonwebtoken": "^9.0.2"
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/uuid": "^9.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-node": "^10.9.1",
+    "uuid": "^9.0.1"
   }
 }

@@ -6,7 +6,9 @@
     "jsx": "react",
     "noImplicitAny": false,
     "sourceMap": true,
-    "outDir": "./lib/"
+    "outDir": "./lib/",
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
   "include": [
     "src/**/*"
